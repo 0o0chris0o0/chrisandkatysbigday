@@ -22,17 +22,17 @@ export default class Main extends React.Component {
   render() {
     return (
       <div className={styles.main}>
-        <div className="grid-container" data-sticky-container>
+        <div data-sticky-container>
           <img
             src={images['./balloons.svg']}
             id="katyandchris"
-            className="katyandchris hide-for-large"
+            className="katyandchris is-hidden-desktop"
             alt="Katy and Chris"
             data-sticky-wrap
             data-margin-top="100"
           />
-          <div className="grid-x grid-margin-x align-center">
-            <div className="cell show-for-large large-4 text-center">
+          <div className="columns is-centered">
+            <div className="column is-hidden-touch desktop-4 is-centered">
               <img
                 src={images['./balloons.svg']}
                 id="katyandchris"
@@ -42,7 +42,7 @@ export default class Main extends React.Component {
                 data-margin-top="100"
               />
             </div>
-            <div className="cell small-11 large-7 large-offset-1">
+            <div className="column is-11 desktop-7 is-offset-1">
               <RSVP />
               <Venue />
               <Venue />
