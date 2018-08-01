@@ -1,4 +1,6 @@
 @import "mixins/mixins";
+
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC|Poiret+One");
 // Check available variables to overwrite here: https://bulma.io/documentation/customize/variables/
 
 // RESPONSIVE SIZES
@@ -6,7 +8,8 @@ $widescreen-enabled: false;
 $fullhd-enabled: false;
 
 // TYPOGRAPHY
-$family-primary: "Circular Spotify Text", Arial, sans-serif;
+$family-primary: "Poiret One", cursive;
+$font-secondary: "Amatic SC", cursive;
 $link: white;
 
 // MODAL
