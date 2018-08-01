@@ -1,0 +1,118 @@
+.app {
+  overflow: hidden;
+}
+
+.grid-container {
+  width: 100%;
+}
+
+.container {
+  overflow-x: hidden;
+  position: relative;
+  min-height: 100vh;
+}
+
+.clouds {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  width: 9999%;
+  height: 100%;
+  background: url("../assets/img/clouds.png");
+  background-size: 80vw;
+  animation: clouds 6500s linear infinite;
+}
+
+@keyframes clouds {
+  0% {
+    right: -8999%;
+  }
+
+  100% {
+    right: 0;
+  }
+}
+
+.katyandchris {
+  position: fixed;
+  z-index: 2;
+  top: 90px;
+  left: calc(50% - 70px);
+  max-width: 140px;
+  animation: balloons 10s ease-in-out infinite;
+
+  @include tablet {
+    top: 110px;
+    left: calc(50% - 110px);
+    max-width: 220px;
+  }
+}
+
+.katyandchris_desktop {
+  z-index: 99;
+  max-width: 340px;
+  animation: balloons 10s ease-in-out infinite;
+}
+
+@keyframes balloons {
+  0% {
+    transform: translate(0%, 0%);
+  }
+
+  20% {
+    transform: translate(2%, -5%);
+  }
+
+  30% {
+    transform: translate(0%, -2%);
+  }
+
+  50% {
+    transform: translate(4%, 0%);
+  }
+
+  80% {
+    transform: translate(-2%, -3%);
+  }
+
+  100% {
+    transform: translate(0%, 0%);
+  }
+}
+
+.plane {
+  position: absolute;
+  z-index: 4;
+  top: 1%;
+  left: 0;
+  width: 700px;
+  max-width: 100%;
+  transform: rotate(-4deg);
+  animation: plane 30s linear infinite;
+  animation-delay: -18s;
+
+  @include tablet {
+    top: 2%;
+  }
+
+  img {
+    display: block;
+    width: 600px;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
+
+.--fade-in {
+  animation: fade-in 1s ease-in-out;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,29 @@
+---
+  extends:
+    - plugin:react/recommended
+    - netflix
+
+  plugins:
+    - react
+
+  rules:
+    react/jsx-no-duplicate-props: 2
+    react/jsx-no-undef: 2
+    react/jsx-uses-vars: 2
+    react/jsx-pascal-case: 1
+    react/jsx-uses-react: 1
+    react/jsx-wrap-multilines: 2
+    react/prefer-stateless-function: 1
+    react/no-deprecated: 2
+    react/no-did-mount-set-state: 2
+    react/require-render-return: 2
+    react/jsx-key: 2
+    react/prop-types: 1
+    react/require-default-props: 1
+
+    no-debugger: 0
+    semi: 0
+    curly: [2, 'multi-line']
+    no-extra-parens: [2, "all", { "ignoreJSX": "all" }]
+    comma-dangle: 1
+    class-methods-use-this: [1, { "exceptMethods": [render] }]

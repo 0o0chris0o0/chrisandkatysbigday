@@ -1,0 +1,17 @@
+{
+	"recommendations": [
+		"dzannotti.vscode-babel-coloring",
+		"mikestead.dotenv",
+		"dsznajder.es7-react-js-snippets",
+		"dbaeumer.vscode-eslint",
+		"eamodio.gitlens",
+		"vincaslt.highlight-matching-tag",
+		"akamud.vscode-javascript-snippet-pack",
+		"eg2.vscode-npm-script",
+		"christian-kohler.npm-intellisense",
+		"christian-kohler.path-intellisense",
+		"esbenp.prettier-vscode",
+		"glen-84.sass-lint",
+		"whatwedo.twig"
+	]
+}

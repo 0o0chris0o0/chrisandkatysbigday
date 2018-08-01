@@ -1,0 +1,29 @@
+{
+  "editor.wordWrap": "wordWrapColumn",
+  "editor.wordWrapColumn": 120,
+  "editor.detectIndentation": false,
+  "editor.tabSize": 2,
+  "javascript.format.enable": false,
+  "prettier.eslintIntegration": true,
+  "prettier.singleQuote": true,
+  "files.associations": {
+    "*.html": "twig",
+    "*.js": "javascriptreact"
+  },
+  "emmet.includeLanguages": {
+    "twig": "html",
+    "javascript": "javascriptreact"
+  },
+  "highlight-matching-tag.style": {
+    "textDecoration": "underline"
+  },
+  "highlight-matching-tag.leftStyle": {
+    "borderWidth": "0 0 0 0"
+  },
+  "highlight-matching-tag.rightStyle": {
+    "borderWidth": "0 0 0 0"
+  },
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true
+}

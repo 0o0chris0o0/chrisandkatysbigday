@@ -1,0 +1,38 @@
+@import "mixins/mixins";
+// Check available variables to overwrite here: https://bulma.io/documentation/customize/variables/
+
+// RESPONSIVE SIZES
+$widescreen-enabled: false;
+$fullhd-enabled: false;
+
+// TYPOGRAPHY
+$family-primary: "Circular Spotify Text", Arial, sans-serif;
+$link: white;
+
+// MODAL
+$modal-background-background-color: rgba(black, 0.9);
+
+// FONT SIZES
+$size-1: 66px;
+$size-2: 49px;
+$size-3: 36px;
+$size-4: 20px;
+$size-5: 18px;
+$size-6: 14px;
+$size-7: 12px;
+
+// TITLE
+$title-color: white;
+$title-size: $size-1;
+$title-weight: 600;
+$title-line-height: 1.065em;
+
+// FORM
+$input-background-color: rgba(white, 0);
+$input-color: white;
+$input-shadow: none;
+$input-hover-border-color: rgba(black, 0.2);
+$input-focus-border-color: rgba(black, 0.5);
+$input-focus-box-shadow-size: 0 0 0 0;
+$input-focus-box-shadow-color: rgba(black, 0);
+$label-color: white;
