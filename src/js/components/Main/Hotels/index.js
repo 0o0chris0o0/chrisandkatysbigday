@@ -14,21 +14,21 @@ export default function Hotels() {
       <div className={`text-center ${styles.textContainer}`}>
         <h2>Hotel Information</h2>
         <div className="grid-x grid-margin-x grid-margin-y">
-          <div className="cell small-6">
+          <div className="cell large-6">
             <p className={styles.line}>
               <span>Hintlesham Hall Hotel</span>
               <span>IP8 3NS</span>
               <span>01473 652334</span>
             </p>
           </div>
-          <div className="cell small-6">
+          <div className="cell large-6">
             <p className={styles.line}>
               <span>Best Western Ipswich Hotel</span>
               <span>IP8 3JD</span>
               <span>01473 209988</span>
             </p>
           </div>
-          <div className="cell small-6">
+          <div className="cell large-6">
             <p>
               <span>Premier Inn, Chantry Park </span>
               <span>IP8 3AR</span>
@@ -40,7 +40,7 @@ export default function Hotels() {
               </a>
             </p>
           </div>
-          <div className="cell small-6">
+          <div className="cell large-6">
             <p>
               <span>Holiday Inn Ipswich</span>
               <span>IP2 0UA</span>

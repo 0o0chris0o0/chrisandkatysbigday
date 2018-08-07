@@ -60,7 +60,11 @@
     padding: 10px;
     border: 1px dashed rgba(black, 0.2);
     border-radius: 5px;
-    font-size: rem-calc(24);
+    font-size: rem-calc(18);
+
+    @include breakpoint(medium) {
+      font-size: rem-calc(24);
+    }
 
     span {
       display: block;
@@ -68,8 +72,10 @@
 
     a {
       display: block;
+      overflow: hidden;
       margin: rem-calc(12 0 0);
       text-decoration: underline;
+      letter-spacing: 1px;
     }
   }
 }

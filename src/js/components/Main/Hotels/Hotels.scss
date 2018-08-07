@@ -73,7 +73,9 @@
 
     a {
       display: block;
+      font-size: rem-calc(20);
       text-decoration: underline;
+      letter-spacing: 1px;
     }
   }
 
