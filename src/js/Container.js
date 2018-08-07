@@ -32,7 +32,9 @@ export default class Container extends React.Component {
       <div>
         {status === 'ready' ? (
           <div className="--fade-in">
-            <Clouds />
+            <div className="cloud-container">
+              <Clouds />
+            </div>
             <Plane />
             <Main />
           </div>

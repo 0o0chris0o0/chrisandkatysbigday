@@ -12,15 +12,22 @@
   min-height: 100vh;
 }
 
+.cloud-container {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
 .clouds {
   position: absolute;
   z-index: 1;
   top: 0;
-  width: 9999%;
+  width: 100%;
   height: 100%;
   background: url("../assets/img/clouds.png");
-  background-size: 80vw;
-  animation: clouds 6500s linear infinite;
+  background-size: 100%;
+  // animation: clouds 6500s linear infinite;
 }
 
 @keyframes clouds {
@@ -41,7 +48,7 @@
   max-width: 140px;
   animation: balloons 10s ease-in-out infinite;
 
-  @include tablet {
+  @include breakpoint(medium) {
     top: 110px;
     left: calc(50% - 110px);
     max-width: 220px;
@@ -49,7 +56,7 @@
 }
 
 .katyandchris_desktop {
-  z-index: 99;
+  z-index: 2;
   max-width: 340px;
   animation: balloons 10s ease-in-out infinite;
 }
@@ -83,7 +90,7 @@
 .plane {
   position: absolute;
   z-index: 4;
-  top: 1%;
+  top: 3%;
   left: 0;
   width: 700px;
   max-width: 100%;
@@ -91,14 +98,14 @@
   animation: plane 30s linear infinite;
   animation-delay: -18s;
 
-  @include tablet {
-    top: 2%;
+  @include breakpoint(medium) {
+    top: 7%;
   }
 
   img {
     display: block;
-    width: 600px;
-    max-width: 90%;
+    width: 90%;
+    max-width: 600px;
     margin: 0 auto;
   }
 }

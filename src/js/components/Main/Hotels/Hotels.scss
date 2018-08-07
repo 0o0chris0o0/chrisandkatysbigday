@@ -4,7 +4,7 @@
   .textBlock {
     position: relative;
     z-index: 4;
-    margin-top: 40vh;
+    margin-bottom: 40vh;
     padding: 10px;
     border-radius: 5px;
     background: #fffaf3;
@@ -58,10 +58,14 @@
   }
 
   .textContainer {
-    padding: rem-calc(16 24);
+    padding: 10px;
     border: 1px dashed rgba(black, 0.2);
     border-radius: 5px;
     font-size: rem-calc(24);
+
+    h2 {
+      margin-bottom: rem-calc(8);
+    }
 
     span {
       display: block;
@@ -69,60 +73,23 @@
 
     a {
       display: block;
-      margin: rem-calc(12 0 0);
       text-decoration: underline;
     }
   }
 
-  .form {
-    label {
-      display: block;
-      margin: rem-calc(10 0);
-      line-height: 1.2;
+  .line {
+    position: relative;
+    padding-bottom: rem-calc(16);
+
+    &:after {
+      position: absolute;
+      bottom: -16px;
+      left: 50%;
+      width: 50px;
+      height: 1px;
+      background: black;
+      content: "";
+      transform: translateX(-50%);
     }
-  }
-
-  .rsvp {
-    img,
-    label {
-      display: inline-block;
-      vertical-align: middle;
-      cursor: pointer;
-      transition: all 0.4s ease-in-out;
-    }
-
-    img {
-      width: rem-calc(30);
-      height: rem-calc(30);
-      margin-right: rem-calc(8);
-    }
-  }
-
-  .active {
-    font-weight: bold;
-    transform: scale(1.07);
-
-    img {
-      margin-left: rem-calc(7);
-    }
-  }
-
-  .errorMsg {
-    margin: rem-calc(0 0 6);
-    color: red;
-    font-size: rem-calc(16);
-    font-weight: bold;
-  }
-
-  .formError {
-    padding: rem-calc(8);
-    border: 1px solid red;
-  }
-
-  .submitButton {
-    display: inline-block;
-    padding: rem-calc(8 16);
-    border: 1px solid rgba(black, 0.2);
-    border-radius: 5px;
   }
 }

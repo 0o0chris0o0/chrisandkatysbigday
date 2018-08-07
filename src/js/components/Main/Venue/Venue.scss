@@ -1,0 +1,91 @@
+@import "settings";
+
+:local {
+  .venueContainer {
+    margin-top: rem-calc(50);
+    margin-bottom: 40vh;
+  }
+
+  .balloonContainer {
+    position: relative;
+    z-index: 1;
+  }
+
+  .leftBalloon,
+  .rightBalloon {
+    position: absolute;
+    width: 50px;
+    max-height: none;
+
+    @include breakpoint(medium) {
+      width: 80px;
+    }
+    @include breakpoint(large) {
+      width: auto;
+    }
+  }
+
+  .leftBalloon {
+    right: 99%;
+    bottom: 100%;
+    transform: rotate(1deg) translate(7px, -7px);
+
+    @include breakpoint(medium) {
+      transform: rotate(1deg) translate(12px, -7px);
+    }
+    @include breakpoint(large) {
+      right: 100%;
+      transform: rotate(-10deg) translate(7px);
+    }
+  }
+
+  .rightBalloon {
+    bottom: 100%;
+    left: 100%;
+    transform: scaleX(-1) translate(8px, -1px) rotate(-7deg);
+
+    @include breakpoint(medium) {
+      transform: scaleX(-1) translate(10px, -1px) rotate(-7deg);
+    }
+    @include breakpoint(large) {
+      transform: scaleX(-1) translateX(10px) rotate(-8deg);
+    }
+  }
+
+  .textContainer {
+    padding: 10px;
+    border: 1px dashed rgba(black, 0.2);
+    border-radius: 5px;
+  }
+
+  .textBlock {
+    position: relative;
+    z-index: 4;
+    padding: 10px;
+    border-radius: 5px;
+    background: #fffaf3;
+    font-size: 20px;
+  }
+
+  .heading {
+    margin: rem-calc(0 0 10);
+  }
+
+  .address {
+    span {
+      display: block;
+      font-size: rem-calc(24);
+      line-height: 1.2;
+    }
+  }
+
+  .image {
+    width: 100%;
+  }
+
+  .extraText {
+    margin: rem-calc(24 0 0);
+    font-size: rem-calc(18);
+    line-height: 1.2;
+  }
+}

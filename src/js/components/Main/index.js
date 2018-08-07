@@ -6,8 +6,10 @@ import styles from './main.scss';
 import images from '../../utils/importAllImages';
 import copy from '../../../assets/copy.json';
 
+import Venue from './Venue';
+import Gifts from './Gifts';
+import Hotels from './Hotels';
 import RSVP from './RSVP';
-import Venue from './venue';
 import Footer from './Footer';
 
 export default class Main extends React.Component {
@@ -22,17 +24,17 @@ export default class Main extends React.Component {
   render() {
     return (
       <div className={styles.main}>
-        <div data-sticky-container>
+        <div className="grid-container" data-sticky-container>
           <img
             src={images['./balloons.svg']}
             id="katyandchris"
-            className="katyandchris is-hidden-desktop"
+            className="katyandchris hide-for-large"
             alt="Katy and Chris"
             data-sticky-wrap
             data-margin-top="100"
           />
-          <div className="columns is-centered">
-            <div className="column is-hidden-touch desktop-4 is-centered">
+          <div className="grid-x grid-margin-x align-center">
+            <div className="cell show-for-large large-4 text-center">
               <img
                 src={images['./balloons.svg']}
                 id="katyandchris"
@@ -42,12 +44,11 @@ export default class Main extends React.Component {
                 data-margin-top="100"
               />
             </div>
-            <div className="column is-11 desktop-7 is-offset-1">
+            <div className="cell small-10 medium-9 large-7 large-offset-1">
+              <Venue />
+              <Hotels />
+              <Gifts />
               <RSVP />
-              <Venue />
-              <Venue />
-              <Venue />
-              <Venue id="bottom" />
             </div>
           </div>
         </div>

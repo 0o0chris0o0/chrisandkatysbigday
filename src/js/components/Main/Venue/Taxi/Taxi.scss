@@ -1,0 +1,39 @@
+@import "settings";
+
+:local {
+  .taxiContainer {
+    position: relative;
+    z-index: 3;
+    margin-top: rem-calc(24);
+  }
+
+  .taxi {
+    position: relative;
+    padding: rem-calc(4);
+    border-radius: 10px;
+    background: #fffaf3;
+
+    span {
+      display: block;
+    }
+  }
+
+  .taxiInner {
+    padding: rem-calc(8 12);
+    border: 1px dashed rgba(black, 0.2);
+    border-radius: 10px;
+  }
+
+  .stringa {
+    position: absolute;
+    bottom: 97%;
+    left: 0;
+  }
+
+  .stringb {
+    position: absolute;
+    right: 0;
+    bottom: 97%;
+    transform: scaleX(-1);
+  }
+}

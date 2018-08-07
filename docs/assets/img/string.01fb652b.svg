@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="23px" height="86px" viewBox="0 0 23 86" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="balloons_1" fill="#FFFFFF" fill-rule="nonzero">
+            <path d="M4.9400638,1.42108547e-14 C-1.3899362,23.56 6.9400638,46.88 12.1900638,53.75 C17.4400638,60.62 23.9182129,81.281494 22.440918,84.133301 C20.963623,86.985107 17.0395508,84.874023 17.0395508,84.133301 C17.0395508,83.392578 24.2000638,77 9.2000638,52.88 C-3.5799362,32.32 1.3709961,7 3.2709961,1.42108547e-14 L4.9400638,1.42108547e-14 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>
