@@ -3,7 +3,7 @@
 
 module.exports = [
   {
-    from: 'src/assets/img/loader-spinner.svg',
+    from: 'src/assets/img/heart.png',
     to: 'assets/img'
   }
 ];

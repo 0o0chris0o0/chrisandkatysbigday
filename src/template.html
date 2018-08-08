@@ -29,43 +29,10 @@
       overflow: hidden;
 		}
 
-		.lds-heart {
-      display: inline-block;
-      position: relative;
+    .lds-heart img {
       width: 64px;
       height: 64px;
-      transform: rotate(45deg);
-      transform-origin: 32px 32px;
-    }
-
-    .lds-heart div {
-      top: 23px;
-      left: 19px;
-      position: absolute;
-      width: 26px;
-      height: 26px;
-      background: #ec6464;
       animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
-    }
-
-    .lds-heart div:after,
-    .lds-heart div:before {
-      content: " ";
-      position: absolute;
-      display: block;
-      width: 26px;
-      height: 26px;
-      background: #ec6464;
-    }
-
-    .lds-heart div:before {
-      left: -17px;
-      border-radius: 50% 0 0 50%;
-    }
-
-    .lds-heart div:after {
-      top: -17px;
-      border-radius: 50% 50% 0 0;
     }
 
     @keyframes lds-heart {
@@ -94,7 +61,7 @@
 
 	<div id="app">
     <div class="loader-wrap">
-		  <div class="lds-heart"><div></div></div>
+		  <div class="lds-heart"><img src="/assets/img/heart.png"/></div>
     </div>
 	</div>
 </body>

@@ -5,7 +5,7 @@ import styles from './Taxi.scss';
 
 export default function Taxi({ images }) {
   return (
-    <div className={`grid-x grid-margin-x grid-margin-y ${styles.taxiContainer}`}>
+    <div className={`grid-x grid-margin-x grid-margin-y align-middle ${styles.taxiContainer}`}>
       <div className="cell small-6 large-shrink text-center">
         <div className={styles.taxi}>
           <div className={styles.taxiInner}>
